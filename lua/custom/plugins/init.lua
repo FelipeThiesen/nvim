@@ -5,4 +5,7 @@
 
 ---@module 'lazy'
 ---@type LazySpec
+return {
+	'ThePrimeagen/vim-be-good',
+}
 return {}

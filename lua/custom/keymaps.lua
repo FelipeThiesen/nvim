@@ -33,8 +33,8 @@ vim.keymap.set('n', '<F5>', ':RunCode<CR>', { noremap = true, silent = true, des
 -- 2. INJEÇÃO DE ESQUELETOS (BOILERPLATE)
 -- =====================================================================
 
--- Atalho: <espaço> + s + c (Skeleton C)
-vim.keymap.set('n', '<leader>sc', function()
+-- Atalho: <espaço> + e + c (ESkeleton C)
+vim.keymap.set('n', '<leader>ec', function()
   local lines = {
     "#include <stdio.h>",
     "#include <stdlib.h>",
@@ -51,30 +51,17 @@ vim.keymap.set('n', '<leader>sc', function()
   vim.cmd("startinsert!")
 end, { desc = "Inserir Esqueleto C" })
 
--- Atalho: <espaço> + s + p (Skeleton C++)
-vim.keymap.set('n', '<leader>sp', function()
+-- Atalho: <espaço> + e + p (ESkeleton C++)
+vim.keymap.set('n', '<leader>ep', function()
   local lines = {
     "#include <iostream>",
-    "#include <vector>",
-    "#include <string>",
-    "#include <format> // Requer compilador compatível com C++20",
-    "",
     "using namespace std;",
     "",
-    "void solve() {",
-    "    // Sua lógica aqui",
-    "}",
-    "",
     "int main() {",
-    "    // Otimização de I/O para Programação Competitiva",
     "    ios_base::sync_with_stdio(false);",
     "    cin.tie(NULL);",
     "",
-    "    int t = 1;",
-    "    // cin >> t; // Descomente para problemas com múltiplos casos de teste",
-    "    while (t--) {",
-    "        solve();",
-    "    }",
+    "",
     "    return 0;",
     "}"
   }
