@@ -39,7 +39,7 @@ vim.keymap.set('n', '<leader>ec', function()
     "#include <stdio.h>",
     "#include <stdlib.h>",
     "",
-    "int main(void) {",
+    "int main() {",
     "    ",
     "    return 0;",
     "}"
@@ -55,6 +55,7 @@ end, { desc = "Inserir Esqueleto C" })
 vim.keymap.set('n', '<leader>ep', function()
   local lines = {
     "#include <iostream>",
+    "#include <iomanip>",
     "using namespace std;",
     "",
     "int main() {",
